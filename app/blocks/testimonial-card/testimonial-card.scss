@@ -1,0 +1,112 @@
+.testimonial-card {
+    width: auto;
+    height: auto;
+    max-height: 350px;
+    min-height: 250px;
+    overflow: hidden;
+    border: 2px solid $gray;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 30px;
+    display: block;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+        border: 2px solid $red;
+        box-shadow: 0 80px 30px -29px rgba(13, 16, 37, 0.06);
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+
+    &__avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+    }
+
+    &__rating {
+        font-size: 16px;
+        color: $black;
+        position: relative;
+        padding: 10px 26px 10px 0;
+
+        &::before {
+            content: "";
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            right: 0;
+            background-image: url("./../images/rating__star-icon.svg");
+        }
+    }
+
+    &__user-info {
+        flex-grow: 1;
+    }
+
+    &__user-location {
+        margin: 0;
+        font-size: 14px;
+        color: #4f5665;
+        white-space: nowrap;
+
+        @media screen and (max-width: 1368px) {
+            text-overflow: ellipsis;
+            max-width: 100px;
+            overflow: hidden;
+        }
+
+        @media screen and (max-width: 932px) {
+            max-width: 160px;
+        }
+
+        @media screen and (max-width: 720px) {
+            max-width: 100px;
+        }
+
+        @media screen and (max-width: 548px) {
+            max-width: 160px;
+        }
+    }
+
+    &__user-name {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        color: $black;
+        white-space: nowrap;
+
+        @media screen and (max-width: 1368px) {
+            text-overflow: ellipsis;
+            max-width: 100px;
+            overflow: hidden;
+        }
+
+        @media screen and (max-width: 932px) {
+            max-width: 160px;
+        }
+
+        @media screen and (max-width: 720px) {
+            max-width: 100px;
+        }
+
+        @media screen and (max-width: 548px) {
+            max-width: 160px;
+        }
+    }
+
+    &__main {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 25px;
+    }
+}

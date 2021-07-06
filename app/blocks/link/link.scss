@@ -1,0 +1,9 @@
+.link {
+    color: #4F5665;
+    text-decoration: none;
+    transition: color 200ms ease-in-out;
+
+    &:hover {
+        color: $red;
+    }
+}

@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  min-height: 41px;
+
+  &__logo {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    z-index: 4;
+  }
+
+  &__menu {
+    flex: 1 1 auto;
+    padding-left: 149px;
+
+    @media screen and (max-width: 1050px) {
+      padding-left: 0;
+    }
+  }
+
+  @media screen and (max-width: 924px) {
+    max-width: calc(100% - 24px * 2);
+  }
+
+  @media screen and (max-width: 568px) {
+    max-width: calc(100% - 16px * 2);
+  }
+}

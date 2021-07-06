@@ -1,0 +1,35 @@
+.button {
+  background-color: transparent;
+  width: 177px;
+  height: 45px;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 2px solid $red;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: $red;
+  cursor: pointer;
+  height: 45px;
+  width: 178px;
+  transition: background-color 300ms cubic-bezier(0, 0, 1, 1);
+
+  &:hover {
+    background: $red;
+    color: $white;
+  }
+
+  &_type_min {
+    padding: 0;
+    border: none;
+    color: $black;
+    width: auto;
+    transition: color 200ms ease-in;
+
+    &:hover {
+      background: transparent;
+      color: $red;
+    }
+  }
+}

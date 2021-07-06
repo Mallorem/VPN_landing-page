@@ -1,0 +1,80 @@
+.statistic {
+  padding: 67px 91px;
+  box-shadow: 0 42px 30px -14px rgba(13, 16, 37, 0.06);
+
+  &__container {
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (max-width: 670px) {
+      flex-direction: column;
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 91px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 55px;
+      height: 55px;
+      top: 5px;
+      left: 0;
+    }
+
+    &_type_location {
+      &::before {
+        background: url("./../images/about__location-icon.svg");
+      }
+    }
+
+    &_type_servers {
+      &::before {
+        background: url("./../images/about__server-icon.svg");
+      }
+    }
+
+    &_type_users {
+      &::before {
+        background: url("./../images/about__users-icon.svg");
+      }
+    }
+
+    @media screen and (max-width: 670px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__number {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 868px) {
+    padding: 67px 31px;
+  }
+
+  @media screen and (max-width: 689px) {
+    padding: 67px 24px;
+  }
+}

@@ -1,0 +1,60 @@
+.content {
+  padding-bottom: 117px;
+  position: relative;
+
+  &__section {
+    margin: 0 auto;
+  }
+
+  &__features {
+    margin-top: 96px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 66px;
+    }
+  }
+
+  &__locations {
+    margin-top: 150px;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 120px;
+    }
+  }
+
+  &__plans {
+    margin-top: 80px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 50px;
+    }
+  }
+
+  &__promo {
+    margin-top: 88px;
+  }
+
+  &__testimonials {
+    margin-bottom: 65px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 35px;
+    }
+  }
+
+  &__statistic {
+    margin-top: 103px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 73px;
+    }
+  }
+
+  @media screen and (max-width: 920px) {
+    padding-bottom: 230px;
+  }
+}

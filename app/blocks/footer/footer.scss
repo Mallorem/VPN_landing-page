@@ -1,0 +1,91 @@
+.footer {
+  background: #f8f8f8;
+  padding: 180px 0 50px;
+
+  &__container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 10%;
+    grid-row-gap: 20px;
+    grid-template-areas: "logo row1 row2 row3" "about row1 row2 row3" "social row1 row2 row3" "copy row1 row2 row3";
+  
+    @media screen and (max-width: 600px) {
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas: "logo logo logo" "about about about" "social social social" "row1 row2 row3" "copy copy copy";
+    }
+  }
+
+  &__about {
+    line-height: 30px;
+    color: #4f5665;
+    grid-area: about;
+  }
+
+  &__copy {
+    grid-area: copy;
+    line-height: 30px;
+    color: #afb5c0;
+
+    span {
+      font-weight: 500;
+    }
+
+    @media screen and (max-width: 600px) {
+      margin-top: 20px;
+    }
+  }
+
+  &__logo {
+    grid-area: logo;
+  }
+
+  &__menu-row {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &_type_engage {
+      grid-area: row2;
+    }
+
+    &_type_money {
+      grid-area: row3;
+    }
+
+    &_type_product {
+      grid-area: row1;
+    }
+  }
+
+  &__menu-item {
+    line-height: 30px;
+    margin-top: 10px;
+    color: #4f5665;
+
+    a {
+      color: #4f5665;
+      text-decoration: none;
+    }
+  }
+
+  &__menu-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: $black;
+  }
+
+  &__social {
+    grid-area: social;
+  }
+
+  @media screen and (max-width: 868px) {
+    padding-bottom: 20px;
+  }
+
+  
+}

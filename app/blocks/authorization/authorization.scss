@@ -1,0 +1,28 @@
+.authorization {
+    &__signup {
+        width: 150px;
+
+        @media screen and (max-width: 768px) {
+            &.button {
+                border: none;
+                width: auto;
+
+                &:hover {
+                    background-color: transparent;
+                    color: $red;
+                }
+            }
+        }
+    }
+
+    &__signin {
+        width: 55px;
+        margin-right: 30px;
+
+        &:hover {
+            background-color: transparent;
+            color: $red;
+            box-shadow: none;
+        }
+    }
+}
